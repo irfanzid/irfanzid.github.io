@@ -10,10 +10,24 @@ li {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
+}
+
+#home,
+#projects,
+#contact {
+  scroll-margin-top: 240px;
+}
+
+#projects {
+  margin-top: 50px;
 }
 
 nav {
@@ -26,7 +40,6 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  scroll-margin-top: 300px;
 }
 
 .navbar-left {
@@ -57,11 +70,8 @@ nav {
 }
 
 .navbar-right a:hover {
-  background-color: #555;
-}
-
-section {
-  scroll-margin-top: 100px;
+  position: relative;
+  top: 10px;
 }
 
 header {
@@ -115,17 +125,16 @@ div {
   margin-bottom: 1rem;
   cursor: pointer;
 }
+.project-card:hover {
+  background-color: #9e9c9c;
+  color: #fff;
+}
 
 .project-card img {
   width: 400px;
   height: 300px;
   object-fit: cover;
   border-radius: 5px;
-  transition: 0.5s;
-}
-
-.project-card img:hover {
-  height: 350px;
 }
 
 .project-card h3 {
@@ -142,7 +151,6 @@ footer {
   color: #fff;
   text-align: center;
   height: 100vh;
-  scroll-margin-top: 90px;
 }
 
 .footer-content {
@@ -179,7 +187,8 @@ footer {
 }
 
 .footer-link a:hover {
-  color: #555;
+  position: relative;
+  top: 10px;
 }
 
 .footer-link i {
@@ -211,12 +220,45 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-left {
+    margin-top: -5px;
+    padding-top: 0;
+  }
+
+  .navbar-right {
+    margin-top: -10px;
+    padding-top: 0;
+  }
+
+  .navbar-right a:hover {
+    position: relative;
+    top: 5px;
+  }
+
   header h1 {
     font-size: 1.5rem;
   }
 
+  .project-card {
+    width: 90vw;
+  }
+
+  .project-card img {
+    width: 80vw;
+    height: 300px;
+  }
+
   .footer-title h2 {
     font-size: 1.5rem;
+  }
+
+  .footer-link a:hover {
+    top: 5px;
   }
 
   header p,

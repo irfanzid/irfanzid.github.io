@@ -18,14 +18,3 @@ window.addEventListener("scroll", reveal);
 
 // To check the scroll position on the page load
 reveal();
-
-// Smooth scrolling to anchor links
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-    });
-  });
-});
