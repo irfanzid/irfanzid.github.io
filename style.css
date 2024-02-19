@@ -337,13 +337,6 @@ section {
   flex-direction: column;
 }
 
-.details-containers {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-direction: row;
-}
-
 .article-container {
   display: flex;
   text-align: initial;
