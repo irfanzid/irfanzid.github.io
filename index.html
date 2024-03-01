@@ -36,11 +36,11 @@
         </div>
       </div>
     </nav>
-    <section id="profile">
-      <div class="section__pic-container">
+    <section id="profile" class="hidden">
+      <div class="section__pic-container hidden">
         <img src="./assets/gambar-profil.png" alt="Irfan profile picture" />
       </div>
-      <div class="section__text">
+      <div class="section__text hidden">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Irfan Badri</h1>
         <p class="section__text__p2">Freshgraduate Electrical Engineering</p>
@@ -58,27 +58,27 @@
         </div>
       </div>
     </section>
-    <section id="about">
+    <section id="about" class="hidden">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <div class="section__pic-container hidden">
           <img src="./assets/gambar_gunung.jpg" alt="Profile picture" class="about-pic" />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
+            <div class="details-container hidden">
               <img src="./assets/experience.png" alt="Experience icon" class="icon" />
               <h3>Experience</h3>
               <p>3 month <br />Intership CV Laksana Karoseri</p>
             </div>
-            <div class="details-container">
+            <div class="details-container hidden">
               <img src="./assets/education.png" alt="Education icon" class="icon" />
               <h3>Education</h3>
               <p>S.T Sarjana Teknik Elektro</p>
             </div>
           </div>
-          <div class="text-container">
+          <div class="text-container hidden">
             <p>
               I am a Bachelor of Electrical Engineering graduate with experience in maintenance and electrical during my internship. In addition, my active involvement in Karang Taruna activities has shaped my leadership and collaboration
               skills. I have a strong passion for learning and am always eager to improve myself. Although my background is in electrical engineering, I am exploring new things like web development and machine learning.
@@ -88,12 +88,12 @@
       </div>
       <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
     </section>
-    <section id="experience">
+    <section id="experience" class="hidden">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container">
+          <div class="details-container hidden">
             <h2 class="experience-sub-title">Intership Laksana Karoseri</h2>
             <div class="article-container">
               <article>
@@ -128,7 +128,7 @@
               </article>
             </div>
           </div>
-          <div class="details-container">
+          <div class="details-container hidden">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
               <article>
@@ -168,7 +168,7 @@
               </article>
             </div>
           </div>
-          <div class="details-container">
+          <div class="details-container hidden">
             <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
               <article>
@@ -201,7 +201,7 @@
               </article>
             </div>
           </div>
-          <div class="details-container">
+          <div class="details-container hidden">
             <h2 class="experience-sub-title">Machine Learning</h2>
             <div class="article-container">
               <article>
@@ -245,12 +245,12 @@
       </div>
       <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
     </section>
-    <section id="projects">
+    <section id="projects" class="hidden">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div class="details-container color-container hidden">
             <div class="article-container">
               <img src="./assets/project1-bell.png" alt="Project 1" class="project-img" />
             </div>
@@ -260,7 +260,7 @@
               <button class="btn btn-color-2 project-btn" onclick="window.open('https://youtu.be/D_n2dY-FOH8?si=ACW8lc2Md1OMzTX5', '_blank')">Live Demo</button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container color-container hidden">
             <div class="article-container">
               <img src="./assets/ongoing-project.PNG" alt="Project 2" class="project-img" />
             </div>
@@ -274,7 +274,7 @@
       </div>
       <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
     </section>
-    <section id="contact">
+    <section id="contact" class="hidden">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
@@ -288,14 +288,14 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer class="hidden">
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="hidden"><a href="#about">About</a></li>
+            <li class="hidden"><a href="#experience">Experience</a></li>
+            <li class="hidden"><a href="#projects">Projects</a></li>
+            <li class="hidden"><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
